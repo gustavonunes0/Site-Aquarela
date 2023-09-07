@@ -8,7 +8,6 @@ export const Footer = styled.footer`
   justify-content: center;
   place-items: center;
   background-color: #2072fa;
-
   @media screen and (max-width: 850px) {
     height: auto;
   }

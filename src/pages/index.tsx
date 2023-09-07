@@ -3,9 +3,16 @@ import Head from 'next/head';
 import * as S from '../styles/home';
 import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { relative } from 'path';
+import IntroProjetos from '@/components/IntroProjetos';
 
 
 const Home = () => {
+
+    const projetos = [
+        { nome: 'Baratão Supermercados' },
+        { nome: 'Sessão de fotos - cliente' },
+      ];
 
     return (
         <>
@@ -20,8 +27,15 @@ const Home = () => {
             </Head>
             <NavBar/>
             <S.Main>                
-                <div>
-                </div>
+                <S.ContainerFoto>
+                    <S.ImagemInicial src='/Ativo 8.png'></S.ImagemInicial>
+                    <S.divSpan>
+                        <S.SpanImagemInicial>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</S.SpanImagemInicial>
+                    </S.divSpan>
+                </S.ContainerFoto>
+                {projetos.map((projeto, index) => (
+                <IntroProjetos key={index} nome={projeto.nome} />
+                ))}
             </S.Main>
             <Footer/>
         </>
