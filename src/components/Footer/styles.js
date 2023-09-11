@@ -50,12 +50,12 @@ export const FooterSubmenu = styled.div`
   justify-content: start;
   gap: 1.5rem;
   margin-bottom: 2%;
+  color: white;
 
   &:first-child{
     width: 100%;
   }
 
-  color: white;
   @media screen and (max-width: 850px) {
   }
 `;

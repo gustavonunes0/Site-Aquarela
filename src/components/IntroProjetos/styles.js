@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const ContainerProjetos = styled.div`
     display: grid;
-    grid-template-columns: 31rem 31rem;
+    grid-template-columns: 45% 45%;
     gap: 2rem;
-    width: 70%;
+    justify-content: space-between;
     padding: 1rem 0;
 `;
 

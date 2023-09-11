@@ -106,41 +106,17 @@ const Footer = () => {
                             gap: '1.4rem'
                         }
                     }>
-                        <a href="https://www.instagram.com/aquarelacomunicacao/" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center'}}>
+                        <a href="https://www.instagram.com/aquarelacomunicacao/" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center', color: "#e6e1dd"}}>
                             <S.FooterSubmenuSocialMedia src={"/Ativo 3.png"}/>
-                            <Link href="/"
-                            style={
-                                {
-                                    textDecoration: "none",
-                                    color: "#e6e1dd"
-                                }
-                        }>
                             aquarelacomunicacao
-                        </Link>
                         </a>
-                        <a href="https://www.facebook.com/aquarelacomunicacao" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center'}}>
+                        <a href="https://www.facebook.com/aquarelacomunicacao" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center', color: "#e6e1dd"}}>
                             <S.FooterSubmenuSocialMedia src={"/Ativo 4.png"}/>
-                            <Link href="/"
-                            style={
-                                {
-                                    textDecoration: "none",
-                                    color: "#e6e1dd"
-                                }
-                        }>
                             aquarelacomunicacao
-                        </Link>
                         </a>
-                        <a href="https://www.linkedin.com/company/aquarelacomunicacao" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center'}}>
+                        <a href="https://www.linkedin.com/company/aquarelacomunicacao" target="_blank" style={{display: 'flex', justifyContent: "space-around", textDecoration: 'none', alignItems: 'center', color: "#e6e1dd"}}>
                             <S.FooterSubmenuSocialMedia src={"/Ativo 5.png"}/>
-                            <Link href="/"
-                            style={
-                                {
-                                    textDecoration: "none",
-                                    color: "#e6e1dd"
-                                }
-                        }>
                             aquarelacomunicacao
-                        </Link>
                         </a>
                     </div>
                 </S.FooterSubmenu>

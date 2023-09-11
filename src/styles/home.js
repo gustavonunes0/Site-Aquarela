@@ -11,7 +11,7 @@ export const Main = styled.main`
 `;
 
 export const ContainerFoto = styled.div`
-  height: 80%;
+  height: 100%;
   margin: 0;
   padding: 3rem 7rem;
   display: flex;
@@ -29,7 +29,7 @@ export const ContainerFoto = styled.div`
 export const divSpan = styled.div`
   width: 80%;
   height: 100%;
-  padding: 9rem;
+  left: 19rem;
   display: flex;
   position: absolute;
   justify-content: left;

@@ -4,19 +4,21 @@ const IntroProjetos = ({ nome }) => {
   const nomeEmMaiusculas = nome.toUpperCase();
 
   return (
-    <div style={{padding: '0 0 5rem 0'}}>
-      <div style={{ display: "flex", alignItems: "center", gap: ".8rem" }}>
-        <S.SpanNome>{nomeEmMaiusculas}</S.SpanNome>
-        <S.divLinhaAzul></S.divLinhaAzul>
+    <div style={{padding: '0 7rem 5rem 7rem', width: '100%', display: "flex", justifyContent: "center"}}>
+      <div style={{width: '80%'}}>
+        <div style={{ display: "flex", alignItems: "center", gap: ".8rem", width:'100%' }}>
+          <S.SpanNome>{nomeEmMaiusculas}</S.SpanNome>
+          <S.divLinhaAzul></S.divLinhaAzul>
+        </div>
+        <S.ContainerProjetos>
+          <S.Projeto>
+            <S.Triangulo />
+          </S.Projeto>
+          <S.Projeto>
+            <S.Triangulo />
+          </S.Projeto>
+        </S.ContainerProjetos>
       </div>
-      <S.ContainerProjetos>
-        <S.Projeto>
-          <S.Triangulo />
-        </S.Projeto>
-        <S.Projeto>
-          <S.Triangulo />
-        </S.Projeto>
-      </S.ContainerProjetos>
     </div>
   );
 };
