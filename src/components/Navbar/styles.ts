@@ -18,7 +18,7 @@ export const HeaderContainer = styled.header`
 
 export const HeaderBox = styled.div`
   width: 100%;
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
 `;
@@ -85,7 +85,7 @@ export const MenuToggle = styled.div`
   }
 `;
 
-export const MenuItems = styled.div`
+export const MenuItems = styled.div<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
 

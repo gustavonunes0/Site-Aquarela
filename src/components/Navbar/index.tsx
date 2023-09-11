@@ -1,15 +1,16 @@
-import * as S from "./styles";
+import * as S from "./styles"; // Ensure the correct path to your styles file
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-const NavBar = () => {
+
+const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+  
   return (
     <>
       <S.HeaderContainer>
@@ -23,24 +24,24 @@ const NavBar = () => {
               <span></span>
               <span></span>
             </S.MenuToggle>
-            <S.MenuItems isOpen={isOpen}>
+            <S.MenuItems isOpen={isOpen}> 
               <S.MenuItem>
-                <Link href={{ pathname: "/" }} style={{ textDecoration: 'none' }}>
+                <Link href={{ pathname: "/" }}>
                   <S.StyledLink>INÍCIO</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/quemSomos" }} style={{ textDecoration: 'none' }}>
+                <Link href={{ pathname: "/quemSomos" }}>
                   <S.StyledLink>EMPRESA</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/produtos" }} style={{ textDecoration: 'none' }}>
+                <Link href={{ pathname: "/produtos" }}>
                   <S.StyledLink>EQUIPE</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/contato" }} style={{ textDecoration: 'none' }}>
+                <Link href={{ pathname: "/contato" }}>
                   <S.StyledLink>CONTATO</S.StyledLink>
                 </Link>
               </S.MenuItem>
