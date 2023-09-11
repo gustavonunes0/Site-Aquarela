@@ -6,6 +6,14 @@ export const ContainerProjetos = styled.div`
     gap: 2rem;
     justify-content: space-between;
     padding: 1rem 0;
+
+    
+    @media screen and (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 `;
 
 export const Projeto = styled.div`
@@ -16,6 +24,34 @@ export const Projeto = styled.div`
     display: flex;
     justify-content: center;
     border-bottom: 2.2rem solid #2072fa;
+
+    @media screen and (max-width: 850px) {
+        height: 18rem;
+    }
+
+    
+    @media screen and (max-width: 600px) {
+        width: 18rem;
+    }
+`;
+
+export const Container = styled.div`
+    width: 80%;
+    
+    @media screen and (max-width: 600px) {
+        width: auto;
+    }
+`;
+
+export const DivHeader = styled.div`
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    width: 100%;
+    
+    @media screen and (max-width: 600px) {
+        flex-direction: column
+    }
 `;
 
 export const divLinhaAzul = styled.div`

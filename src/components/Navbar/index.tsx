@@ -26,22 +26,22 @@ const NavBar: React.FC = () => {
             </S.MenuToggle>
             <S.MenuItems isOpen={isOpen}> 
               <S.MenuItem>
-                <Link href={{ pathname: "/" }}>
+                <Link href={{ pathname: "/" }} style={{textDecoration: "none"}}>
                   <S.StyledLink>INÍCIO</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/quemSomos" }}>
+              <Link href={{ pathname: "/" }} style={{textDecoration: "none"}}>
                   <S.StyledLink>EMPRESA</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/produtos" }}>
+              <Link href={{ pathname: "/" }} style={{textDecoration: "none"}}>
                   <S.StyledLink>EQUIPE</S.StyledLink>
                 </Link>
               </S.MenuItem>
               <S.MenuItem>
-                <Link href={{ pathname: "/contato" }}>
+              <Link href={{ pathname: "/" }} style={{textDecoration: "none"}}>
                   <S.StyledLink>CONTATO</S.StyledLink>
                 </Link>
               </S.MenuItem>

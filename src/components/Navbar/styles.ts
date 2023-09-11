@@ -48,6 +48,10 @@ export const MenuItem = styled.div`
     font-weight: 700;
     
   }
+
+  @media screen and (max-width: 600px) {
+    padding: .2rem;
+  }
 `;
 
 export const StyledLink = styled.span`
@@ -99,7 +103,7 @@ export const MenuItems = styled.div<{ isOpen: boolean }>`
     padding-top: ${({ isOpen }) => (isOpen ? "3rem" : "0")};
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    background-color: #e6e1dd;
+    background-color: #fff;
     z-index: 1;
   }
 `;

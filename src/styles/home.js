@@ -20,9 +20,9 @@ export const ContainerFoto = styled.div`
   position: relative;
   @media screen and (max-width: 600px) {
       text-align: center;
+      padding: 3rem 0;
   }
   @media screen and (max-width: 850px) {
-      height: 20rem;
   }
 `;
 
@@ -33,10 +33,24 @@ export const divSpan = styled.div`
   display: flex;
   position: absolute;
   justify-content: left;
+
+  @media screen and (max-width: 850px) {
+    left: 0;
+  }
+`;
+
+export const DivImagemInicial = styled.div`
+  width: 80%;
+
+  @media screen and (max-width: 850px) {
+    height: 25rem;
+  }
 `;
 
 export const ImagemInicial = styled.img`
-  width: 80%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const SpanImagemInicial = styled.span`
@@ -45,4 +59,16 @@ export const SpanImagemInicial = styled.span`
   font-size: 1.4rem;
   top: 70%;
   width: 30%;
+
+  @media screen and (max-width: 850px) {
+    top: 60%;
+    left: 30%;
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 600px) {
+    top: 60%;
+    left: 20%;
+    width: 60%;
+    text-align: left;
+  }
 `;

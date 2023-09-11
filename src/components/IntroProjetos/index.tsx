@@ -10,11 +10,11 @@ const IntroProjetos: React.FC<IntroProjetosProps> = ({ nome }) => {
 
   return (
     <div style={{ padding: '0 7rem 5rem 7rem', width: '100%', display: "flex", justifyContent: "center" }}>
-      <div style={{ width: '80%' }}>
-        <div style={{ display: "flex", alignItems: "center", gap: ".8rem", width: '100%' }}>
+      <S.Container>
+        <S.DivHeader>
           <S.SpanNome>{nomeEmMaiusculas}</S.SpanNome>
           <S.divLinhaAzul></S.divLinhaAzul>
-        </div>
+        </S.DivHeader>
         <S.ContainerProjetos>
           <S.Projeto>
             <S.Triangulo />
@@ -23,7 +23,7 @@ const IntroProjetos: React.FC<IntroProjetosProps> = ({ nome }) => {
             <S.Triangulo />
           </S.Projeto>
         </S.ContainerProjetos>
-      </div>
+      </S.Container>
     </div>
   );
 };
